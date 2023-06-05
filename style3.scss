@@ -1,0 +1,345 @@
+////////////////////////// my main color///////////////////////////////// 
+$main-color: #432C7A;
+$main-color-light: #8870c1;
+$second-color: #e1d671;
+//////////////////////////////////////////////////////////////////////// 
+
+$second-color-1: #f3eb9b;
+$main-color-2:#539165;
+$my-old-color:#3F497F;
+
+
+/************************************ new style sheet /home/ *******************************************/
+body {
+    background-color: #432C7A;
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $main-color-light;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $main-color-light;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid $second-color;  /* creates padding around scroll thumb */
+  }
+
+.my-image {
+    margin: 50px 0 0 50px;
+    border-radius: 10%;
+    height: 700px;
+    box-shadow: 3px 20px 100px #282727;
+    pointer-events: none;
+}
+.the-first-text {
+    position: relative;
+    top: 180px;
+}
+.back-img{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/******************************* my name ************************************************/
+
+.my-name{
+    color: $my-old-color;
+}
+.my-name:hover{
+    color: $my-old-color;
+}
+.my-name-botton{
+    border: none;
+    font-size: xx-large;
+    color: $second-color;
+}
+.my-name-botton:hover{
+    color: $second-color;
+}
+/********************************************************************************************/
+
+/**************************************BA-TECH button*************************************/
+
+.ba-button {
+    color: $second-color;
+    text-decoration:none;
+}
+
+.ba-button:hover {
+    color: $second-color;
+}
+
+/****************************************** collapse style ************************************/
+
+.my-coll-apse{
+    position: relative;
+    top: 160px;
+    line-height: 1.5;
+    color: #ffffff !important;
+}
+
+.my-coll-apse-text{
+    color: #fff;
+    position: relative;
+    top: 20px;
+}
+
+/******************************** nav bar ***************************************************/
+
+.navbar{
+    text-align: center;
+}
+.nav-item{
+    padding: 10px 30px 0;
+    font-size: larger;    
+}
+.home-h-r{
+    color: $second-color;
+    border-width: 3px;
+    border-radius: 25%;
+
+  }
+
+/*********************************** media query *******************************************/
+
+/*********************************** Laptop size *******************************************/
+@media  screen and (max-width:1370px) {
+/************ Home ***********/
+    .my-image{
+        height: 450px;
+    }
+    .my-coll-apse-text{
+        font-size: 25px;
+    }
+}
+/*********************************** larg screen size *******************************************/
+
+/*********************************** mobile screen size *******************************************/
+@media screen and (max-width:1100px){
+    .my-image{
+        width: 300px;
+        height: 350px;
+    }
+    .the-first-text{
+        padding: 20px 0 0 70px;
+        margin: 0px 0 0 0 ;
+        top: 170px;
+    }
+    .my-coll-apse-text{
+        padding: 0 0 0 70px;
+        left: 0px;
+    }
+}
+@media screen and (max-width:600px){
+    .my-image{
+        width: 230px;
+        height: 270px;
+    }
+    .the-first-text{
+        margin: 0;
+        font-size: 30px;
+    }
+    .my-name-botton{
+        font-size:30px;
+        width:100px;
+    }
+    .the-first-text{
+        position: unset;
+    }
+    .my-coll-apse{
+        position: unset;
+    }
+}
+@media (min-width:600px)  and (max-width:991px){
+.the-first-text{
+    position: unset;
+}
+.my-coll-apse{
+    position: unset;
+}
+}
+@media screen and (max-width:991px){
+    .home-h-r{
+        width: 120px;
+        margin: auto !important;
+    }
+    
+}
+/************************************ end of style sheet /home/ *******************************************/
+
+
+/************************************ style sheet /about me/ *******************************************/
+
+.about-me-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-left: 70px ;
+}
+h2{
+    font-size: x-large;
+    
+}
+h3{
+    color: $second-color;
+    font-size: larger;
+}
+.my-details-c{
+    padding-left: 70px;
+    padding-top: 100px;
+}
+/************************************ end of style sheet /about me/ *******************************************/
+
+
+/************************************ style sheet /skills/ *******************************************/
+.my-skills-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-left: 70px;
+}
+.xd-image{
+    width: 35px;
+    opacity: 0.8;
+    border-radius: 7px;
+}
+
+/********************skills presntage ********************************/
+.knob {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 10px ;
+    pointer-events: none;
+  }
+
+/************************************ end of style sheet /skills/ *******************************************/
+
+
+/************************************ style sheet /contact/ *******************************************/
+.get-in-touch{
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-left: 70px; 
+}
+.touch-text{
+    color: $second-color;
+}
+.my-social-contact{
+    position: relative;
+    left: 40px;
+    top: 30px;
+    padding: 30px;
+    text-decoration: none;
+}
+a{
+    color: $second-color;
+}
+a:hover{
+    color: $second-color;
+}
+.my-email-text{
+    display: inline;
+     padding-left: 10px;
+    position: relative;
+    left: 150px;
+    }
+
+.my-email{
+    position: relative;
+    left: 150px;
+}
+.label-text{
+    color: $second-color;
+    font-weight: bold;
+    display: block;
+}
+.my-message-in{
+    width: 30%;
+}
+.my-message-in:focus{
+    width: 50%;
+}
+.my-message-name{
+    display: inline;
+    width: 20%;
+    margin: 10px 17px;
+}
+.get-in-touch-text{
+    width: 400px;
+    font-weight: bold;
+    padding-left: 70px;
+}
+.get-in-touch-text-social{
+    width: 400px;
+    font-weight: bold;
+ 
+}
+
+.input-text-message{
+    width: 50%;
+    border: 1px solid #ccc;
+    opacity: 0.7;
+    font-family: 'Chivo Mono', monospace;
+    margin: 10px 0;
+}
+.submit-button-message{
+    position: relative;
+    left: 70px;
+    top: 20px;
+    cursor: pointer;
+
+}
+.submit-button-message {
+    color: black;
+    background-color: $second-color;
+    &:hover{
+        color: black;
+        background-color: $second-color-1;
+    }
+  }
+  
+  /******************************* media queri for mobile*************************************/
+
+    /****************************** media queri bage contact me*******************************/
+
+  @media screen and (max-width: 990px) {
+    .col-25, .col-75 {
+      width: 100%;
+      margin-top: 0;
+    }
+    .input[type=submit]{
+        width: 50%;
+    }
+    .get-in-touch-text-social{
+        padding: 50px 0 0 70px ;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    .get-in-touch-text-social{
+        padding: 50px 0 0 70px;
+    }
+  }
+/************************************ end of style sheet /contact/ *******************************************/
+
+.precentage{
+    color: $main-color;
+    font-size: 1px;
+}
