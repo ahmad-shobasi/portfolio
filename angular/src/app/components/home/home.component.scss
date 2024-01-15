@@ -1,0 +1,11 @@
+@use '../../../var.scss' as *;
+@import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+.home-section{
+    height: calc(100vh - 56px);
+    align-items: center;
+    background-color: $default-color-2;
+    h1,h2,span{
+        color: $text-color-1;
+    }
+}

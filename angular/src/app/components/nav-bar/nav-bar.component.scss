@@ -1,0 +1,9 @@
+@use '../../../var.scss' as *;
+.portfolio-navbar{
+    background-color: $default-color-1;
+    color: $text-color-1;
+    padding: 15px 0;
+    .nav-item{
+        list-style-type: none;
+    }
+}

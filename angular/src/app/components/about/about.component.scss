@@ -1,0 +1,8 @@
+@use '../../../var.scss' as *;
+
+.about-section{
+    background-color: $default-color-2;
+    h1,p{
+        color: $text-color-1;
+    }
+}
