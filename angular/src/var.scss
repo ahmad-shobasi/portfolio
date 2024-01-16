@@ -1,14 +1,18 @@
-$default-color-1:var(--default-color-1);
-$default-color-2:var(--default-color-2);
+$default-color-1: var(--default-color-1);
+$default-color-2: var(--default-color-2);
 
-$text-color-1:var(--text-color-1);
-$text-color-2:var(--text-color-2);
+$text-color-1: var(--text-color-1);
+$text-color-2: var(--text-color-2);
 
+// html,[data-theme='light']{
 
-html,[data-theme='dark']{
-    --default-color-1: #091921;
-    --default-color-2: #183D3D;
+// }
 
-    --text-color-1: #fff;
-    --text-color-2:#ddd;
+html,
+[data-theme="dark"] {
+  --default-color-1: #091921;
+  --default-color-2: #183d3d;
+
+  --text-color-1: #fff;
+  --text-color-2: #ddd;
 }
