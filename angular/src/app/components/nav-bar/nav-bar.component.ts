@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ScrollService } from '../../services/scrollbehavior.service';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrl: './nav-bar.component.scss',
 })
 export class NavBarComponent {
   navItems = [
-    {name:'Home', routLink:'', isSelected: false},
-    {name:'About', routLink:'', isSelected: false},
-    {name:'Services', routLink:'', isSelected: false},
-    {name:'contact', routLink:'', isSelected: false},
-  ]
+    { name: 'Home', routLink: 'Home', isSelected: false },
+    { name: 'About', routLink: 'About', isSelected: false },
+    { name: 'Services', routLink: 'Services', isSelected: false },
+    { name: 'Contact', routLink: 'Contact', isSelected: false },
+  ];
+
+  constructor(scrollServices: ScrollService) {}
 }

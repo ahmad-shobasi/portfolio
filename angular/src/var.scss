@@ -4,6 +4,11 @@ $default-color-2: var(--default-color-2);
 $text-color-1: var(--text-color-1);
 $text-color-2: var(--text-color-2);
 
+@font-face {
+  font-family: "play";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+}
+
 // html,[data-theme='light']{
 
 // }
