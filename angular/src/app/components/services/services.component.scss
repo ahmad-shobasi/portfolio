@@ -1,18 +1,28 @@
 @use "../../../var.scss" as *;
 
 .card-container {
-  background-color: $default-color-2;
+  background: $default-color-2;
+  padding: 70px;
 
   .card {
+    cursor: pointer;
     background-color: $default-color-1;
     box-shadow: 0 1px 5px #2c2c2c;
-    min-height: 150px;
+    min-height: 250px;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    overflow: hidden;
+
     transition: all 0.4s ease-in-out;
     &:hover {
-      transform: scale(1.01) rotate(-0.5deg);
+      // transform: scale(1.01) rotate(-0.5deg);
       .card-body {
+        img {
+          width: 103%;
+          height: 103%;
+        }
         p {
-          padding-bottom: 5px;
+          bottom: 2px;
         }
       }
     }
@@ -23,13 +33,15 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
       }
       p {
         position: absolute;
         bottom: 0;
         color: $text-color-1;
-        transition: all 0.4s ease-in-out;
-        // background: linear-gradient(to top, #2c2c2c, #474747);
+        font-size: large;
+        transition: all 0.3s ease-in-out;
       }
     }
   }

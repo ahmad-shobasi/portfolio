@@ -11,42 +11,42 @@ import { ICard } from '../../interfaces/iCard';
 export class ServicesComponent {
   portfolioCard: ICard[] = [
     {
-      img: '',
+      img: './assets/ultra_nature_wallpaper_4k_hd.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/a-random-lake-holiday-nature-beautiful.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/pngtree-an-open-stream-running-through-a-forest-covered-in-grass-and-image_2935355.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/ultra_nature_wallpaper_4k_hd.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/a-random-lake-holiday-nature-beautiful.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/pngtree-an-open-stream-running-through-a-forest-covered-in-grass-and-image_2935355.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/ultra_nature_wallpaper_4k_hd.jpg',
       title: 'this is project',
       link: '',
     },
     {
-      img: '',
+      img: './assets/a-random-lake-holiday-nature-beautiful.jpg',
       title: 'this is project',
       link: '',
     },

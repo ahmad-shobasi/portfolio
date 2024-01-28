@@ -1,5 +1,36 @@
-@use '../../../var.scss' as *;
+@use "../../../var.scss" as *;
 
-.conact-section{
-background-color: $default-color-2;
+.conact-section {
+  background: $default-color-2;
+
+  form {
+    text-align: center;
+    input {
+      height: 55px;
+      margin: 10px 0;
+    }
+    textarea,
+    input {
+      background: $text-color-2;
+    }
+    textarea {
+      width: calc(100% - 8px);
+    }
+    .send-message-btn {
+      position: relative;
+      top: 0;
+      background-color: #163747;
+      color: #8bbdd6;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+      margin: 20px;
+      box-shadow: none;
+      &:hover {
+        background-color: #091921;
+
+        box-shadow: 0 0 7px 2px #7ce1e1;
+        top: -3px;
+      }
+    }
+  }
 }

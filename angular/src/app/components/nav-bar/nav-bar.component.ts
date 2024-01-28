@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ScrollService } from '../../services/scrollbehavior.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -17,5 +16,5 @@ export class NavBarComponent {
     { name: 'Contact', routLink: 'Contact', isSelected: false },
   ];
 
-  constructor(scrollServices: ScrollService) {}
+  constructor() {}
 }

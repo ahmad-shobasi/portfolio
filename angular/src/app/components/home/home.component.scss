@@ -4,11 +4,16 @@
 .home-section {
   height: calc(90vh - 56px);
   align-items: center;
-  background-color: $default-color-2;
-  h1,
-  h3 {
-    color: $text-color-1;
+  background: $default-color-2;
+  h1 {
+    color: $text-color-3;
+    font-size: 80px;
     font-family: "play";
+  }
+  h3 {
+    font-family: "play";
+    font-weight: 300;
+    color: $text-color-2;
   }
 
   .text-section {
@@ -49,5 +54,10 @@
     &:hover {
       color: #1da1f2;
     }
+  }
+
+  .my-image {
+    width: 80%;
+    height: 80%;
   }
 }

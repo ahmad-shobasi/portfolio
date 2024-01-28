@@ -3,6 +3,7 @@ $default-color-2: var(--default-color-2);
 
 $text-color-1: var(--text-color-1);
 $text-color-2: var(--text-color-2);
+$text-color-3: var(--text-color-3);
 
 @font-face {
   font-family: "play";
@@ -15,9 +16,11 @@ $text-color-2: var(--text-color-2);
 
 html,
 [data-theme="dark"] {
-  --default-color-1: #091921;
-  --default-color-2: #183d3d;
+  --default-color-1: #111111;
+  // --default-color-2: #1c1d1c;
+  --default-color-2: linear-gradient(90deg, #1c1d1c 0%, #111111 100%);
 
   --text-color-1: #fff;
   --text-color-2: #ddd;
+  --text-color-3: #f2f2f2;
 }
